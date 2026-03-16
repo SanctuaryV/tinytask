@@ -30,7 +30,7 @@ app.post('/tasks', (req, res) => {
     return res.status(400).json({ message: 'Invalid title format' });
   }
 
-  To check if title is empty or just a whitespace
+  // To check if title is empty or just a whitespace
   if (title.trim().length === 0) {
       return res.status(400).json({ message: 'Title cannot be empty' });
   }
